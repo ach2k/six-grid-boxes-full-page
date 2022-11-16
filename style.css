@@ -42,3 +42,33 @@
     transform: rotate(360deg);
 }
 
+.box:nth-child(3) {
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0), translateY(50px);
+    }
+    33% {
+        transform: translateY(200px);
+    }
+    66% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(50px);
+        background-color: darkslategray;
+    }
+}
+
+h1 {
+    background-color: rebeccapurple;
+    position: absolute;
+}
